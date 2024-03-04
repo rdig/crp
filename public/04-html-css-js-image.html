@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<head>
+  <title>HTML + CSS + JS + Image | Critical Render Path | Colony Dev Dive #2 by Raul Glogovetan</title>
+  <style>
+    .red {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="red">Box</div>
+  <img src="./dev-dive-logo.png" alt="Colony Dev Dive #2" width="100px" />
+  <script>
+    const [boxElement] = document.getElementsByClassName('red');
+    boxElement.style.backgroundColor = 'green';
+    boxElement.style.width = '200px';
+  </script>
+</body>
